@@ -1,4 +1,4 @@
-alert("Enter correct Password");
+
 
 (function () {
   emailjs.init("lsvp7otU6bygqkZFW");
