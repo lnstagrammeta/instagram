@@ -1,0 +1,161 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+/* WRAPPER */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* PHONE PREVIEW (DESKTOP ONLY) */
+.phone-preview img {
+    width: 380px;
+}
+
+.phone-preview {
+    margin-right: 40px;
+}
+
+/* CONTENT COLUMN */
+.content {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* LOGIN BOX */
+.login-box {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    text-align: center;
+}
+
+.logo {
+    font-family: "Brush Script MT", cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #3897f0;
+    border: none;
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3183d6;
+}
+
+/* DIVIDER */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background: #dbdbdb;
+}
+
+.divider p {
+    margin: 0 10px;
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+/* LINKS */
+.fb-login {
+    color: #385185;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.forgot {
+    color: #00376b;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+
+/* SIGNUP BOX */
+.signup-box {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-box a {
+    color: #0095f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* APP DOWNLOAD */
+.get-app {
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.app-badges img {
+    width: 130px;
+    margin: 5px;
+}
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 8px;
+    display: none;
+}
+
+/* ------------------------- */
+/* RESPONSIVE FOR PHONES */
+/* ------------------------- */
+
+@media(max-width: 850px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .phone-preview {
+        display: none;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+}
